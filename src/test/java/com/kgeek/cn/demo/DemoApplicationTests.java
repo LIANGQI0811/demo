@@ -22,8 +22,7 @@ public class DemoApplicationTests {
 
     @Test
     public void contextLoads() {
-        List<AppEntity> apps = appRepository.findAllByAppName("aaaa");
-        System.out.println(apps.get(0).getAppName());
+        appRepository.updateName("cccc",1);
     }
 
 }
